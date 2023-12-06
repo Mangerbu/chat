@@ -5,18 +5,18 @@
     grid-template-rows: 50px minmax(0, 1fr) 70px;
 
     .toolbar {
-        background-color: blanchedalmond;
+        background-color: #efefef;
     }
 
     .container {
         padding: 32px;
-        background-color: azure;
+        background-color: #e5ddda;
         display: flex;
         flex-direction: column;
         gap: 4px;
 
         .msj {
-            background-color: aliceblue;
+            background-color: #dcf8c6;
             color: black;
             align-self: flex-start;
             padding: 4px 8px;
@@ -35,7 +35,7 @@
 
             &.own {
                 align-self: flex-end;
-                background-color: aquamarine;
+                background-color: #03a9f4;
             }
         }
     }
@@ -44,7 +44,7 @@
 form {
     display: flex;
     gap: 16px;
-    background-color: beige;
+    background-color: #ecebea;
     padding: 16px;
     align-items: center;
 
