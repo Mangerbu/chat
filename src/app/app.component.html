@@ -1,0 +1,17 @@
+<div class="toolbar">
+  Chat grupal
+</div>
+
+<div class="container">
+  <div class="msj" [ngClass]="{own: mensaje.own}" *ngFor="let mensaje of mensajes">
+    <div class="name">{{ mensaje.name }}</div>
+    <div class="txt">{{ mensaje.text }}</div>
+    <div class="date">{{ mensaje.date | date: 'h:mm aa' }}</div>
+  </div>
+</div>
+
+<form [formGroup]="modelForm">
+  <div class="emoji"></div>
+  <input type="text" (keypress)="enter($event)" formControlName="msj">
+  <button type="button" (click)="send()">Enviar</button>
+</form>
